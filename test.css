@@ -521,7 +521,7 @@ footer .container{
     }
 
     #testimonios {
-        background-color: #f9f9f9; /* Color de fondo para la sección de testimonios */
+        background-color: #e4e1dc; /* Color de fondo para la sección de testimonios */
         padding: 50px 12px; /* Espaciado alrededor del contenido */
         text-align: center; /* Centra el texto */
     }
@@ -532,14 +532,15 @@ footer .container{
     }
     
     .testimonio {
-        background-color: white; /* Color de fondo de cada testimonio */
+        background-color: rgb(240, 235, 235); /* Color de fondo de cada testimonio */
         border-radius: 10px; /* Bordes redondeados */
-        padding: 40px; /* Aumentar el espaciado interno para hacer los cuadros más largos */
+        padding: 30px; /* Aumentar el espaciado interno para hacer los cuadros más largos */
         margin: 20px auto; /* Margen entre testimonios y centrado */
         max-width: 1200px; /* Ancho máximo de los testimonios */
         max-height: 130px;
         min-height: 100px; /* Altura mínima para los cuadros de testimonios */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+        
     }
     
     .testimonio p {
@@ -569,7 +570,6 @@ footer .container{
     Estructura organizacional
     ubicacion
     definicion del negocio
-    mision y  vision
     slogan
     estrategias de venta 
     sign in 

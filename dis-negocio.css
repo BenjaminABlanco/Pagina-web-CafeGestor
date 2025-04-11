@@ -44,14 +44,32 @@ header{
     background-color: #ccc3ba;
 }
 
+header .logo {
+    display: flex; /* Asegúrate de que el logo y el texto estén en línea */
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+    margin: 0; /* Elimina el margen */
+    padding: 15px 30px; /* Elimina el padding */
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #aa4f54;
+}
+
+header .logo img {
+    height: 50px; /* Ajusta la altura según sea necesario */
+    margin-right: 5px; /* Reduce el espacio entre el logo y el texto */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    object-fit: cover;
+}
+
+/*
 header .logo{
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
     font-size: 1.6em;
     color: #aa4f54;
-
 }
+    */
 
 header .container{
     display: flex;

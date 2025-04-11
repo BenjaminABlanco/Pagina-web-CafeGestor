@@ -557,6 +557,17 @@ footer .container{
     }
 
     /*faltan lo de funcionalidades*/
+    #funcionalidades h2{
+        padding-top: 0px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        text-align: center;
+        font-size: 4em;
+    }
+
+    #funcionalidades ul{
+        text-align: center;
+    }
 
     footer .container{
         justify-content: flex-end;

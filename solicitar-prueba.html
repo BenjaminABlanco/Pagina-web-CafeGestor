@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="solicitar.css"> <!-- Asegúrate de enlazar tu CSS -->
     <title>Solicitar Prueba - Café Gestor</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -33,7 +34,7 @@
 
     <section id="formulario">
         <div>
-            <form class="formulario" action="enviar-formulario.php" method="POST"> <!-- Cambia la acción según sea necesario -->
+            <form id="mi-formulario" class="formulario" action="enviar-formulario.php" method="POST"> <!-- Cambia la acción según sea necesario -->
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
                 
@@ -67,6 +68,7 @@
                 
                 <button type="submit">Enviar Solicitud</button>
             </form>
+            <div id="mensaje-exito" style="display:none; color: green; font-weight: bold; margin-top: 10px;">¡Solicitud enviada exitosamente! 🎉</div>
         </div>
     </section>
 

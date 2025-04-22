@@ -194,6 +194,13 @@ button {
 button:hover {
     background-color: #813c3f; /* Color de fondo al pasar el mouse */
 }
+
+#mensaje-exito {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 footer{
     background-color: rgb(230, 230, 230);
 }

@@ -65,9 +65,9 @@ header .logo {
 }
 
 header .logo img {
-    height: 50px; /* Ajusta la altura según sea necesario */
-    
-    margin-right: 5px; /* Reduce el espacio entre el logo y el texto */
+    height: 150px; /* Ajusta la altura según sea necesario */
+    width: auto;
+    margin-right: 10px; /* Reduce el espacio entre el logo y el texto */
     border-radius: 50%; /* Hace que la imagen sea redonda */
     object-fit: cover;
 }
@@ -112,7 +112,7 @@ header a{
 }
 
 header a:hover{
-    color: white;
+    color: #813c3f;
 }
 .dropdown {
     position: relative;
@@ -129,6 +129,10 @@ header a:hover{
     text-decoration: none;
     font-family: inherit;
     margin: 0;
+}
+
+.dropdown .dropbtn:hover{
+    color: #813c3f;
 }
 
 .dropdown-content{
@@ -155,13 +159,15 @@ header a:hover{
     display: block;
 }
 
+
+
 footer{
     background-color: rgb(230, 230, 230);
 }
 
 footer p{
     margin: 0;
-    margin-left: 750px;
+    margin-left: 300px;
     padding: 12px;
     color: rgb(100, 100, 100);
 }
@@ -197,9 +203,32 @@ footer .container{
     margin-right: 10px;
 }
 
+.footer-links {
+    display: flex; /* Muestra los enlaces en línea */
+    justify-content: center; /* Centra los enlaces */
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    padding-left: 250px;
+    margin: 10px 0; /* Espacio arriba y abajo de la lista */
+}
+
+.footer-links li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+.footer-links a {
+    text-decoration: none; /* Sin subrayado */
+    color: rgb(100, 100, 100); /* Color del texto */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
 
 @media (min-width: 720px){
 
+    
     header{
         position: fixed;
         width: 100%;
@@ -216,14 +245,17 @@ footer .container{
         padding-right: 20px;
     }
 
- 
+ #avisos-legales{
+    background-color: #ccc3ba;
+ }
 
 /* Contenedor principal */
-#avisos-legales {
+#avisos-legales .aviso {
     max-width: 800px; /* Ancho máximo del contenido */
     margin: 20px auto; /* Centra el contenedor */
     padding: 20px; /* Espaciado interno */
-    background-color: white; /* Color de fondo del contenedor */
+    padding-top: 80px;
+    background-color: #ccc3ba; /* Color de fondo del contenedor */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
@@ -234,6 +266,8 @@ footer .container{
     margin-bottom: 20px; /* Espacio debajo del título */
     color: #444; /* Color del título */
 }
+
+
 
 /* Subtítulos de los avisos */
 .aviso h3 {
@@ -259,19 +293,11 @@ a:hover {
     text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
-    
+footer .container{
+    justify-content: flex-end;
+    flex-direction: row;
+}
 
-
-
-
-
-
-
-
-    footer .container{
-        justify-content: flex-end;
-        flex-direction: row;
-    }
 
 
     /*

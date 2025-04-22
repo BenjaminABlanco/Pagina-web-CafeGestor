@@ -248,7 +248,7 @@ footer .container{
     justify-content: center; /* Centra los enlaces */
     list-style: none; /* Sin viñetas */
     padding: 0; /* Sin padding */
-    padding-left: 50px;
+    padding-left: 250px;
     margin: 10px 0; /* Espacio arriba y abajo de la lista */
 }
 

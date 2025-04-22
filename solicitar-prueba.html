@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="solicitar.css"> <!-- Asegúrate de enlazar tu CSS -->
+    <title>Solicitar Prueba - Café Gestor</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="media/CafeGestor-removebg-preview.png" alt="Logo de CafeGestor" style="height: 60px; vertical-align: middle;">
+                <p class="logo">Café Gestor</p>
+            </div>
+            <nav>
+                <a href="index.html#hero">Inicio</a>
+                <div class="dropdown">
+                    <a href="index.html#propuesta-valor" class="dropbtn">Propuesta de Valor</a>
+                    <div class="dropdown-content">
+                        <a href="negocio.html">Somos Café Gestor</a>
+                    </div>
+                </div>
+
+                <a href="index.html#precios">Planes</a>
+                <a href="index.html#funcionalidades">Funcionalidades</a>
+                <a href="index.html#testimonios">Referencias</a>
+                <a href="index.html#contactanos">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="formulario">
+        <div>
+            <form class="formulario" action="enviar-formulario.php" method="POST"> <!-- Cambia la acción según sea necesario -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="finca">Nombre de la Finca:</label>
+                <input type="text" id="finca" name="finca" required>
+                
+                <label for="hectareas">Tamaño de la Finca (en hectáreas):</label>
+                <input type="number" id="hectareas" name="hectareas" required>
+                
+                <label for="produccion">Producción Anual Estimada (en quintales):</label>
+                <input type="number" id="produccion" name="produccion" required>
+                
+                <label for="interes">Áreas de Interés:</label>
+                <select id="interes" name="interes[]" multiple required>
+                    <option value="todas">Todas</option>
+                    <option value="control_cultivos">Control de Cultivos</option>
+                    <option value="reportes_financieros">Reportes Financieros</option>
+                    <option value="monitoreo_calidad">Monitoreo de Calidad</option>
+                    <option value="gestion_costos">Gestión de Costos</option>
+                    <option value="transacciones_comerciales">Transacciones Comerciales</option>
+                </select>
+                
+                <label for="comentarios">Comentarios Adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Proporcione información relevante..."></textarea>
+                
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="media/instagram.png" alt="Instagram" />
+                    <span>@cafégestor</span>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="media/facebook.png" alt="Facebook" />
+                    <span>@cafégestor</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="X">
+                    <img src="media/twitter.png" alt="X" />
+                    <span>@cafégestor</span>
+                </a>
+            </div>
+            <ul class="footer-links">
+                <li><a href="avisos.html">Avisos Legales</a></li>
+                <li><a href="#politica-privacidad">Política de Privacidad</a></li>
+            </ul>
+            <p>&copy; Café Gestor 2025</p>
+        </div>
+    </footer>
+
+</body>
+</html>

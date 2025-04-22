@@ -21,6 +21,7 @@ ul{list-style: none;}
 li{font-size: 1.25em;}
 
 button{
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.25em;
     font-weight: bold;
     padding: 10px 30px;
@@ -43,6 +44,15 @@ button:hover{
 header{
     background-color: #766c62;
 }
+/*
+header .logo{
+    margin: 0;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #aa4f54;
+
+}*/
 
 header .logo {
     display: flex; /* Asegúrate de que el logo y el texto estén en línea */
@@ -55,22 +65,30 @@ header .logo {
 }
 
 header .logo img {
-    height: 150px; /* Ajusta la altura según sea necesario */
-    width: auto;
-    margin-right: 10px; /* Reduce el espacio entre el logo y el texto */
+    height: 50px; /* Ajusta la altura según sea necesario */
+    
+    margin-right: 5px; /* Reduce el espacio entre el logo y el texto */
     border-radius: 50%; /* Hace que la imagen sea redonda */
     object-fit: cover;
 }
 
-/*
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    font-size: 1.6em;
-    color: #aa4f54;
+/*logo
+header .logo {
+    display: flex;
+    align-items: center; 
 }
-    */
+*/
+/*
+header .logo img {
+    height: 100px; 
+    margin-right: 10px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+*/
+/*termina logo*/
 
 header .container{
     display: flex;
@@ -94,10 +112,8 @@ header a{
 }
 
 header a:hover{
-    color: #813c3f;
+    color: white;
 }
-
-/*Empieza el dropdown*/
 .dropdown {
     position: relative;
     display: inline-flex;
@@ -115,10 +131,6 @@ header a:hover{
     margin: 0;
 }
 
-.dropdown .dropbtn:hover{
-    color: #813c3f;
-}
-
 .dropdown-content{
     display: none;
     position: absolute;
@@ -131,6 +143,7 @@ header a:hover{
 }
 
 .dropdown-content a{
+    
     color:white;
     padding: 12px 16px;
     text-decoration: none;
@@ -141,29 +154,6 @@ header a:hover{
 .dropdown:hover .dropdown-content{
     display: block;
 }
-/*Termina el dropdown*/
-
-#mision{
-    background-color: #ccc3ba;
-}
-
-#mision .container{
-    text-align: center;
-    padding: 200px 12px;
-    padding-bottom: 100px;
-    
-}
-
-#vision{
-    background-color: #ccc3ba;
-}
-
-#vision .container{
-    text-align: center;
-    padding: 200px 12px;
-    padding-top: 100px;
-    
-}
 
 footer{
     background-color: rgb(230, 230, 230);
@@ -171,7 +161,7 @@ footer{
 
 footer p{
     margin: 0;
-    margin-left: 300px;
+    margin-left: 750px;
     padding: 12px;
     color: rgb(100, 100, 100);
 }
@@ -207,27 +197,6 @@ footer .container{
     margin-right: 10px;
 }
 
-.footer-links {
-    display: flex; /* Muestra los enlaces en línea */
-    justify-content: center; /* Centra los enlaces */
-    list-style: none; /* Sin viñetas */
-    padding: 0; /* Sin padding */
-    padding-left: 50px;
-    margin: 10px 0; /* Espacio arriba y abajo de la lista */
-}
-
-.footer-links li {
-    margin: 0 15px; /* Espacio entre los elementos de la lista */
-}
-
-.footer-links a {
-    text-decoration: none; /* Sin subrayado */
-    color: rgb(100, 100, 100); /* Color del texto */
-}
-
-.footer-links a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
-}
 
 @media (min-width: 720px){
 
@@ -247,61 +216,50 @@ footer .container{
         padding-right: 20px;
     }
 
-    #mision .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
+ 
 
-    #mision .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+/* Contenedor principal */
+#avisos-legales {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 20px auto; /* Centra el contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: white; /* Color de fondo del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
 
-    #mision h2{
-        margin-top: 0;
-    }
-    /*TODO: Cambiar foto y arreglar los espacios y tamaños*/
-    #mision .img-container{
-        background-image: url("media/mision.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 800px; 
-    }
+/* Títulos de la sección */
+#avisos-legales h2 {
+    font-size: 2.5em; /* Tamaño del título principal */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #444; /* Color del título */
+}
 
-    /* Aqui va la vision*/
-    #vision .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
+/* Subtítulos de los avisos */
+.aviso h3 {
+    font-size: 1.8em; /* Tamaño del subtítulo */
+    margin-top: 20px; /* Espacio arriba del subtítulo */
+    margin-bottom: 10px; /* Espacio debajo del subtítulo */
+    color: #555; /* Color del subtítulo */
+}
 
-    #vision .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        padding-right: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+/* Párrafos dentro de los avisos */
+.aviso p {
+    font-size: 1.1em; /* Tamaño del texto */
+    margin-bottom: 15px; /* Espacio debajo de cada párrafo */
+}
 
-    #vision h2{
-        margin-top: 0;
-    }
-    /*TODO: Cambiar foto y arreglar los espacios y tamaños*/
-    #vision .img-container{
-        background-image: url("media/foto-vision-redim.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 800px; 
-    }
+/* Enlaces dentro de la página */
+a {
+    color: #007BFF; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+    
 
 
 

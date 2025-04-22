@@ -21,6 +21,7 @@ ul{list-style: none;}
 li{font-size: 1.25em;}
 
 button{
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.25em;
     font-weight: bold;
     padding: 10px 30px;
@@ -141,30 +142,58 @@ header a:hover{
 .dropdown:hover .dropdown-content{
     display: block;
 }
-/*Termina el dropdown*/
 
-#mision{
+#formulario div{
     background-color: #ccc3ba;
 }
 
-#mision .container{
-    text-align: center;
-    padding: 200px 12px;
-    padding-bottom: 100px;
-    
-}
 
-#vision{
+.formulario {
     background-color: #ccc3ba;
+    padding: 20px;
+    padding-top: 120px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-#vision .container{
-    text-align: center;
-    padding: 200px 12px;
-    padding-top: 100px;
-    
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
+select[multiple] {
+    height: 100px; /* Ajusta la altura para el campo de selección múltiple */
+}
+
+button {
+    padding: 10px 15px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #aa4f54; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 1.25em; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+button:hover {
+    background-color: #813c3f; /* Color de fondo al pasar el mouse */
+}
 footer{
     background-color: rgb(230, 230, 230);
 }
@@ -247,80 +276,8 @@ footer .container{
         padding-right: 20px;
     }
 
-    #mision .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #mision .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #mision h2{
-        margin-top: 0;
-    }
-    /*TODO: Cambiar foto y arreglar los espacios y tamaños*/
-    #mision .img-container{
-        background-image: url("media/mision.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 800px; 
-    }
-
-    /* Aqui va la vision*/
-    #vision .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #vision .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        padding-right: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #vision h2{
-        margin-top: 0;
-    }
-    /*TODO: Cambiar foto y arreglar los espacios y tamaños*/
-    #vision .img-container{
-        background-image: url("media/foto-vision-redim.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 800px; 
-    }
-
-
-
-
-
-
-
-
     footer .container{
         justify-content: flex-end;
         flex-direction: row;
     }
-
-
-    /*
-    TODO: Para la pagina de Somos CafeGestor 
-
-    Utilizar esta pagina como referencia
-    https://togather.com/about/about-us
-    */
 }
-

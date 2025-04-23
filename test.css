@@ -558,6 +558,7 @@ footer .container{
         background-size: 100% 200px;
         background-repeat: no-repeat;
         background-position-y: 0;
+        width: 350px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
 
@@ -569,7 +570,7 @@ footer .container{
             rgba(0,0,0,0.1)
         )
         ,url("media/plan_semilla.png");
-
+        
     }
 
     .carta:nth-child(2){
